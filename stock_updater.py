@@ -2,50 +2,69 @@ import os
 import yfinance as yf
 import pandas as pd
 import json
+import requests
 from datetime import datetime
 
 def get_nasdaq_universe():
-    url = "https://en.wikipedia.org/wiki/Nasdaq-100"
-    return pd.read_html(url)[4]['Ticker'].tolist()
+    try:
+        url = "https://en.wikipedia.org/wiki/Nasdaq-100"
+        # We add a 'User-Agent' to pretend we are a browser
+        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
+        
+        response = requests.get(url, headers=headers)
+        tables = pd.read_html(response.text)
+        
+        # Search for the correct table
+        for df in tables:
+            if 'Ticker' in df.columns:
+                return df['Ticker'].tolist()
+            if 'Symbol' in df.columns:
+                return df['Symbol'].tolist()
+        
+        return ["AAPL", "MSFT", "NVDA", "GOOGL", "AMZN", "META", "TSLA"] # Fallback
+    except Exception as e:
+        print(f"Fetch Error: {e}")
+        return ["AAPL", "MSFT", "NVDA", "GOOGL", "AMZN", "META", "TSLA"]
 
 def evaluate_gems():
     tickers = get_nasdaq_universe()
     results = []
-
-    for symbol in tickers[:40]: # Scanning top 40 for speed & reliability
+    
+    # Scanning top 30 for speed
+    for symbol in tickers[:30]: 
         try:
-            stock = yf.Ticker(symbol.replace('.', '-'))
+            clean_symbol = str(symbol).replace('.', '-')
+            stock = yf.Ticker(clean_symbol)
             info = stock.info
             
-            # --- EVALUATION CRITERIA ---
-            # 1. Growth: Revenue & Earnings
             rev_growth = info.get('revenueGrowth', 0)
-            # 2. Valuation: PEG & PE
-            peg = info.get('pegRatio', 2)
-            # 3. Health: ROE & Debt
             roe = info.get('returnOnEquity', 0)
-            # 4. Sentiment: Analyst Score (1=Buy, 5=Sell)
-            rating = info.get('recommendationMean', 3)
-
-            # --- THE "GEM" SCORE (0-100) ---
-            score = (rev_growth * 40) + (roe * 30) + ((2 - peg) * 10) + ((5 - rating) * 5)
-            score = max(0, min(100, score)) # Keep between 0-100
+            pe = info.get('forwardPE', 0)
+            
+            # Weighted Scoring
+            score = (rev_growth * 50) + (roe * 50)
+            score = max(0, min(100, score))
 
             results.append({
-                "symbol": symbol,
-                "name": info.get('shortName', symbol),
+                "symbol": clean_symbol,
+                "name": info.get('shortName', clean_symbol),
                 "price": info.get('currentPrice'),
                 "score": round(score, 1),
-                "growth": f"{round(rev_growth * 100, 1)}%",
-                "tag": "🔥 High Growth" if rev_growth > 0.25 else "💎 Value Gem",
-                "reason": f"Strong ROE of {round(roe*100)}% and Analyst Rating of {rating}"
+                "metrics": {"Growth": f"{round(rev_growth*100)}%", "PE": pe},
+                "tag": "High Growth" if rev_growth > 0.25 else "Value Gem",
+                "reason": f"Revenue grew by {round(rev_growth*100)}% this year."
             })
-        except: continue
+        except:
+            continue
 
     results.sort(key=lambda x: x['score'], reverse=True)
     return results[:12]
 
-# Save for the website
-data = {"last_updated": datetime.now().strftime("%Y-%m-%d %H:%M"), "stocks": evaluate_gems()}
+# Save to the JSON file
+output_data = {
+    "last_updated": datetime.now().strftime("%Y-%m-%d %H:%M"),
+    "stocks": evaluate_gems()
+}
+
 with open('live_stocks.json', 'w') as f:
-    json.dump(data, f, indent=4)
+    json.dump(output_data, f, indent=4)
