@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hidden Gem Alpha | Pro Analytics</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #020617; --card: #0f172a; --accent: #10b981;
+            --blue: #3b82f6; --gold: #f59e0b; --text: #f8fafc;
+            --border: #1e293b; --up: #22c55e; --down: #ef4444;
+        }
+        body { background: var(--primary); color: var(--text); font-family: 'Inter', sans-serif; padding: 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); gap: 20px; max-width: 1400px; margin: 0 auto; }
+        
+        .card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 24px; transition: 0.3s; }
+        .card:hover { border-color: var(--accent); transform: translateY(-5px); }
+
+        .header { display: flex; justify-content: space-between; margin-bottom: 20px; }
+        .symbol { font-size: 1.8rem; font-weight: 800; color: var(--accent); }
+        .price { font-size: 1.6rem; font-weight: 800; text-align: right; }
+
+        .predict-box { background: rgba(16, 185, 129, 0.05); border: 1px dashed var(--accent); padding: 12px; border-radius: 12px; margin-bottom: 20px; }
+        .predict-label { font-size: 0.7rem; color: var(--accent); font-weight: 800; text-transform: uppercase; }
+        
+        .sentiment-bar { height: 8px; background: #1e293b; border-radius: 10px; margin: 8px 0 15px 0; overflow: hidden; }
+        .sentiment-fill { height: 100%; transition: 1s ease-out; }
+
+        .chart-wrap { height: 80px; width: 100%; margin: 15px 0; }
+        
+        .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 0.85rem; border-top: 1px solid var(--border); pt: 15px; }
+        .stat-item { display: flex; justify-content: space-between; color: #94a3b8; }
+        .stat-val { color: white; font-weight: 600; }
+    </style>
+</head>
+<body>
+
+<h1 style="text-align:center; margin-bottom:30px; color:var(--accent);">💎 HIDDEN GEM QUANT DASHBOARD</h1>
+
+<div id="stockGrid" class="grid"></div>
+
+<script>
+    async function init() {
+        const res = await fetch('live_stocks.json');
+        const stocks = await res.json();
+        const grid = document.getElementById('stockGrid');
+        
+        grid.innerHTML = stocks.map((s, i) => {
+            const upside = (((s.targetPrice - s.price) / s.price) * 100).toFixed(1);
+            return `
+            <div class="card">
+                <div class="header">
+                    <div><div class="symbol">${s.symbol}</div><span style="color:#64748b">${s.name}</span></div>
+                    <div class="price">$${s.price.toFixed(2)}<div style="font-size:1rem; color:${s.priceChange >= 0 ? 'var(--up)' : 'var(--down)'}">${s.priceChange}%</div></div>
+                </div>
+
+                <div class="predict-box">
+                    <div class="predict-label">12M AI Price Target</div>
+                    <div style="display:flex; justify-content:space-between; align-items:flex-end;">
+                        <span style="font-size:1.4rem; font-weight:800;">$${s.targetPrice}</span>
+                        <span style="color:var(--up); font-weight:800;">+${upside}% Upside</span>
+                    </div>
+                </div>
+
+                <div>
+                    <div style="display:flex; justify-content:space-between; font-size:0.75rem;"><span>SOCIAL BUZZ</span><span>${s.socialBuzz}%</span></div>
+                    <div class="sentiment-bar"><div class="sentiment-fill" style="width:${s.socialBuzz}%; background:var(--blue)"></div></div>
+                    <div style="display:flex; justify-content:space-between; font-size:0.75rem;"><span>NEWS SENTIMENT</span><span>${s.newsSentiment}%</span></div>
+                    <div class="sentiment-bar"><div class="sentiment-fill" style="width:${s.newsSentiment}%; background:var(--accent)"></div></div>
+                </div>
+
+                <div class="chart-wrap"><canvas id="chart-${i}"></canvas></div>
+
+                <div class="stats">
+                    <div class="stat-item">P/E Ratio <span class="stat-val">${s.pe || 'N/A'}</span></div>
+                    <div class="stat-item">PEG Ratio <span class="stat-val">${s.peg}</span></div>
+                    <div class="stat-item">Rev Growth <span class="stat-val" style="color:var(--up)">+${s.revenueGrowth}%</span></div>
+                    <div class="stat-item">Analyst Score <span class="stat-val">${s.analystScore}/5</span></div>
+                </div>
+            </div>`;
+        }).join('');
+
+        stocks.forEach((s, i) => {
+            new Chart(document.getElementById(`chart-${i}`), {
+                type: 'line',
+                data: {
+                    labels: s.history.map((_, index) => index),
+                    datasets: [{
+                        data: s.history,
+                        borderColor: s.priceChange >= 0 ? '#10b981' : '#ef4444',
+                        borderWidth: 2, pointRadius: 0, fill: true,
+                        backgroundColor: s.priceChange >= 0 ? 'rgba(16,185,129,0.1)' : 'rgba(239,68,68,0.1)'
+                    }]
+                },
+                options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { x: { display: false }, y: { display: false } } }
+            });
+        });
+    }
+    init();
+</script>
+</body>
+</html>
