@@ -5,77 +5,80 @@ import json
 import requests
 from datetime import datetime
 
-def get_nasdaq_universe():
+def get_market_universe():
+    """Scrapes 600+ stocks to find the best 20 hidden gems."""
+    headers = {'User-Agent': 'Mozilla/5.0'}
+    tickers = []
     try:
-        url = "https://en.wikipedia.org/wiki/Nasdaq-100"
-        # Identify as a browser to avoid 403 Forbidden Error
-        headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-        }
-        response = requests.get(url, headers=headers)
-        tables = pd.read_html(response.text)
+        # Pulling Nasdaq 100
+        n_url = "https://en.wikipedia.org/wiki/Nasdaq-100"
+        n_resp = requests.get(n_url, headers=headers)
+        tickers += pd.read_html(n_resp.text)[4]['Ticker'].tolist()
         
-        # Search for the correct table with Tickers
-        for df in tables:
-            if 'Ticker' in df.columns:
-                return df['Ticker'].tolist()
+        # Pulling S&P 500 for a wider search area
+        s_url = "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
+        s_resp = requests.get(s_url, headers=headers)
+        tickers += pd.read_html(s_resp.text)[0]['Symbol'].tolist()
         
-        # Fallback list if scraping fails
-        return ["AAPL", "MSFT", "NVDA", "GOOGL", "AMZN", "META", "TSLA", "AVGO", "COST", "NFLX", "AMD", "PEP"]
+        return list(set(tickers)) # Remove duplicates
     except Exception as e:
         print(f"Fetch Error: {e}")
-        return ["AAPL", "MSFT", "NVDA", "GOOGL", "AMZN", "META", "TSLA", "AVGO", "COST", "NFLX", "AMD", "PEP"]
+        return ["AAPL", "MSFT", "NVDA"] # Minimal fallback
 
-def evaluate_gems():
-    tickers = get_nasdaq_universe()
-    results = []
-    
-    # Scanning top 35 for best balance of speed/results
-    for symbol in tickers[:35]: 
+def evaluate_hidden_gems():
+    universe = get_market_universe()
+    gems = []
+
+    print(f"🔍 Screening {len(universe)} stocks for Hidden Gems...")
+
+    for symbol in universe:
         try:
             clean_symbol = str(symbol).replace('.', '-')
             stock = yf.Ticker(clean_symbol)
             info = stock.info
             
-            # --- EVALUATION CRITERIA ---
-            rev_growth = info.get('revenueGrowth', 0)
+            # --- THE "HIDDEN GEM" FILTERS ---
+            price = info.get('currentPrice', 1000)
+            mkt_cap = info.get('marketCap', 0)
+            peg = info.get('pegRatio', 5)
             roe = info.get('returnOnEquity', 0)
-            pe = info.get('forwardPE', 0)
-            peg = info.get('pegRatio', 1.5)
-            rating = info.get('recommendationMean', 3) # 1=Buy, 5=Sell
+            pe = info.get('forwardPE', 100)
 
-            # --- THE "GEM" SCORE (0-100) ---
-            # Weighting: Growth (40%), ROE (30%), Valuation (20%), Sentiment (10%)
-            score = (rev_growth * 400) + (roe * 300) + ((2 - peg) * 10) + ((5 - rating) * 2)
-            score = max(0, min(100, score))
+            # Logic: Price < $50 AND Market Cap > $5B
+            if price < 50 and mkt_cap > 5000000000:
+                
+                # Scoring for "Hidden Value" (Higher ROE + Lower PEG)
+                # We reward stocks where Growth > Price
+                score = (roe * 250) + ((2 - peg) * 20)
+                
+                # Bonus if P/E is under 15 (Classic Value)
+                if 0 < pe < 15: score += 15
+                
+                score = max(40, min(98.5, score))
 
-            results.append({
-                "symbol": clean_symbol,
-                "name": info.get('shortName', clean_symbol),
-                "price": info.get('currentPrice'),
-                "score": round(score, 1),
-                "metrics": {
-                    "Growth": f"{round(rev_growth * 100, 1)}%",
-                    "PE": round(pe, 1),
-                    "ROE": f"{round(roe * 100, 1)}%"
-                },
-                "tag": "🔥 Momentum" if rev_growth > 0.25 else "💎 Value Gem",
-                "reason": f"Revenue Growth: {round(rev_growth*100)}% | ROE: {round(roe*100)}%"
-            })
-        except:
-            continue
+                gems.append({
+                    "symbol": clean_symbol,
+                    "name": info.get('shortName', clean_symbol),
+                    "price": price,
+                    "score": round(score, 1),
+                    "metrics": {
+                        "PEG": peg if peg else "N/A",
+                        "ROE": f"{round(roe*100)}%",
+                        "PE": round(pe, 1) if pe else "N/A"
+                    },
+                    "tag": "Hidden Value" if pe < 18 else "Growth Gem",
+                    "reason": f"Market Cap: ${round(mkt_cap/1e9, 1)}B | PEG: {peg}"
+                })
+        except: continue
 
-    # Sort by score and take Top 12
-    results.sort(key=lambda x: x['score'], reverse=True)
-    return results[:12]
+    # Sort by score and take the Top 20
+    gems.sort(key=lambda x: x['score'], reverse=True)
+    return gems[:20]
 
-# Main execution
 if __name__ == "__main__":
     final_data = {
         "last_updated": datetime.now().strftime("%Y-%m-%d %H:%M"),
-        "stocks": evaluate_gems()
+        "stocks": evaluate_hidden_gems()
     }
-
     with open('live_stocks.json', 'w') as f:
         json.dump(final_data, f, indent=4)
-    print("Successfully updated live_stocks.json")
