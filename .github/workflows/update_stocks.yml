@@ -1,34 +1,34 @@
-name: Scheduled Stock Update
+name: AI Stock Analyst Auto-Update
 
 on:
   schedule:
-    - cron: '0 */2 * * *' # This triggers every 2 hours
-  workflow_dispatch: # This adds a 'Run' button so you can test it manually
+    - cron: '0 */2 * * *' # Every 2 hours
+  workflow_dispatch: # Allows manual "Run" button
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.9'
+          python-version: '3.10'
 
-      - name: Install Libraries
-        run: pip install yfinance finnhub-python
+      - name: Install Dependencies
+        run: pip install yfinance pandas lxml html5lib finnhub-python
 
-      - name: Run Stock Updater
+      - name: Run AI Analysis
         env:
           FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
         run: python stock_updater.py
 
-      - name: Save & Push Changes
+      - name: Commit & Publish Updates
         run: |
           git config --global user.name "Stock-Bot"
           git config --global user.email "bot@github.com"
           git add live_stocks.json
-          git commit -m "Automated price update" || exit 0
+          git commit -m "🤖 AI: Top 12 Gems Updated" || exit 0
           git push
