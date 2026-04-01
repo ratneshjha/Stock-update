@@ -3,68 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NASDAQ Top 12 Stock Picks</title>
+    <title>AI Hidden Gem Scout | $5B+ Market Cap</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f7f6; margin: 0; padding: 20px; }
-        .container { max-width: 1200px; margin: auto; }
-        header { text-align: center; margin-bottom: 40px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; }
-        .card { background: white; border-radius: 15px; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid #2ecc71; position: relative; }
-        .score { position: absolute; top: 15px; right: 15px; background: #2ecc71; color: white; padding: 5px 10px; border-radius: 20px; font-weight: bold; font-size: 0.9em; }
-        h3 { margin: 0 0 5px 0; color: #2c3e50; }
-        .name { color: #7f8c8d; font-size: 0.9em; margin-bottom: 15px; height: 1.2em; overflow: hidden; }
-        .price { font-size: 1.4em; font-weight: bold; color: #2c3e50; margin: 10px 0; }
-        .metrics { display: flex; justify-content: space-between; font-size: 0.85em; color: #34495e; border-top: 1px solid #eee; padding-top: 10px; }
-        .badge { display: inline-block; background: #e8f5e9; color: #2ecc71; padding: 4px 10px; border-radius: 5px; font-size: 0.75em; font-weight: bold; margin-top: 10px; }
-        #update-time { color: #95a5a6; font-size: 0.9em; }
-        #status-msg { text-align: center; color: #e67e22; font-weight: bold; }
+        :root {
+            --primary: #f39c12; /* Gem Gold */
+            --bg: #f4f7f6;
+            --card-bg: #ffffff;
+            --text: #2c3e50;
+            --subtext: #7f8c8d;
+        }
+
+        body { 
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+            background-color: var(--bg); 
+            color: var(--text);
+            margin: 0; 
+            padding: 20px; 
+        }
+
+        .container { max-width: 1300px; margin: auto; }
+
+        header { 
+            text-align: center; 
+            padding: 40px 0;
+            background: linear-gradient(135deg, #2c3e50, #000000);
+            color: white;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        header h1 { margin: 0; font-size: 2.5em; letter-spacing: 1px; }
+        header p { opacity: 0.8; margin-top: 10px; }
+
+        .filters-info {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .filter-tag {
+            background: rgba(255,255,255,0.1);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+            gap: 25px; 
+        }
+
+        .card { 
+            background: var(--card-bg); 
+            border-radius: 16px; 
+            padding: 25px; 
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05); 
+            border-top: 6px solid var(--primary); 
+            position: relative; 
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover { transform: translateY(-8px); }
+
+        .score-badge { 
+            position: absolute; 
+            top: 20px; 
+            right: 20px; 
+            background: var(--primary); 
+            color: white; 
+            padding: 6px 12px; 
+            border-radius: 25px; 
+            font-weight: bold; 
+            font-size: 0.9em; 
+        }
+
+        h3 { margin: 0; font-size: 1.6em; color: var(--text); }
+        .company-name { color: var(--subtext); font-size: 0.95em; margin-bottom: 15px; height: 1.2em; overflow: hidden; }
+
+        .price-section { 
+            font-size: 1.8em; 
+            font-weight: 800; 
+            margin: 15px 0; 
+            color: #27ae60;
+        }
+        .price-label { font-size: 0.4em; color: var(--subtext); vertical-align: middle; }
+
+        .metrics-grid { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 10px;
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+
+        .metric-item { font-size: 0.85em; color: var(--subtext); }
+        .metric-value { display: block; color: var(--text); font-weight: bold; font-size: 1.1em; }
+
+        .gem-tag { 
+            display: inline-block; 
+            background: #fff9e6; 
+            color: #d68910; 
+            padding: 5px 12px; 
+            border-radius: 6px; 
+            font-size: 0.8em; 
+            font-weight: bold; 
+            text-transform: uppercase;
+        }
+
+        .reasoning { 
+            margin-top: 15px; 
+            font-size: 0.85em; 
+            line-height: 1.4; 
+            color: var(--subtext);
+            font-style: italic;
+        }
+
+        #status-msg { text-align: center; padding: 50px; font-size: 1.2em; color: var(--primary); }
     </style>
 </head>
 <body>
+
     <div class="container">
         <header>
-            <h1>NASDAQ Top 12 Stock Picks</h1>
-            <p id="update-time">AI Analysis in Progress...</p>
-            <div id="status-msg">Fetching Latest Market Gems...</div>
+            <h1>AI Hidden Gem Scout</h1>
+            <p id="update-time">Initializing Market Scanner...</p>
+            <div class="filters-info">
+                <span class="filter-tag">Price < $50</span>
+                <span class="filter-tag">Market Cap > $5B</span>
+                <span class="filter-tag">Low PEG Strategy</span>
+            </div>
         </header>
+
+        <div id="status-msg">Searching the NASDAQ & S&P 500 for undervalued gems...</div>
         <div id="stock-grid" class="grid"></div>
     </div>
 
     <script>
-        // We use a timestamp to force the browser to get the NEWEST data
-        const cacheBuster = new Date().getTime();
+        // Forces the browser to ignore cache and get latest data
+        const version = new Date().getTime();
         
-        fetch('./live_stocks.json?v=' + cacheBuster)
-            .then(response => {
-                if (!response.ok) throw new Error("JSON file not found");
-                return response.json();
-            })
-            .then(data => {
+        async function loadGems() {
+            try {
+                const response = await fetch(`./live_stocks.json?v=${version}`);
+                if (!response.ok) throw new Error("Data file not found.");
+                
+                const data = await response.json();
+                
                 document.getElementById('status-msg').style.display = 'none';
                 document.getElementById('update-time').innerText = "Last AI Scan: " + data.last_updated;
-                const grid = document.getElementById('stock-grid');
-                grid.innerHTML = ''; // Clear "Loading" content
                 
+                const grid = document.getElementById('stock-grid');
+                grid.innerHTML = ''; 
+
                 data.stocks.forEach(stock => {
                     grid.innerHTML += `
                         <div class="card">
-                            <div class="score">${stock.score}</div>
+                            <div class="score-badge">Score: ${stock.score}</div>
                             <h3>${stock.symbol}</h3>
-                            <div class="name">${stock.name}</div>
-                            <div class="price">$${stock.price}</div>
-                            <div class="metrics">
-                                <span>Growth: ${stock.metrics.Growth}</span>
-                                <span>PE: ${stock.metrics.PE}</span>
-                                <span>ROE: ${stock.metrics.ROE}</span>
+                            <div class="company-name">${stock.name}</div>
+                            
+                            <div class="price-section">
+                                $${stock.price} <span class="price-label">LIVE PRICE</span>
                             </div>
-                            <div class="badge">${stock.tag}</div>
-                        </div>`;
+
+                            <div class="metrics-grid">
+                                <div class="metric-item">PEG Ratio <span class="metric-value">${stock.metrics.PEG}</span></div>
+                                <div class="metric-item">ROE <span class="metric-value">${stock.metrics.ROE}</span></div>
+                                <div class="metric-item">P/E Ratio <span class="metric-value">${stock.metrics.PE}</span></div>
+                                <div class="metric-item">Type <span class="metric-value" style="color:#d68910;">${stock.tag}</span></div>
+                            </div>
+
+                            <div class="gem-tag">💎 Qualified Hidden Gem</div>
+                            <div class="reasoning">"${stock.reason}"</div>
+                        </div>
+                    `;
                 });
-            })
-            .catch(err => {
-                document.getElementById('status-msg').innerText = "Error: live_stocks.json missing. Run the GitHub Action first!";
+            } catch (err) {
+                document.getElementById('status-msg').innerHTML = 
+                    `<span style="color:red;">Error: live_stocks.json not found.</span><br>
+                     <small>Please run the GitHub Action to generate your first scout report.</small>`;
                 console.error(err);
-            });
+            }
+        }
+
+        loadGems();
     </script>
 </body>
 </html>
