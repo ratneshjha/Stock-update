@@ -12,28 +12,39 @@
         .card { background: white; border-radius: 15px; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid #2ecc71; position: relative; }
         .score { position: absolute; top: 15px; right: 15px; background: #2ecc71; color: white; padding: 5px 10px; border-radius: 20px; font-weight: bold; font-size: 0.9em; }
         h3 { margin: 0 0 5px 0; color: #2c3e50; }
-        .name { color: #7f8c8d; font-size: 0.9em; margin-bottom: 15px; }
+        .name { color: #7f8c8d; font-size: 0.9em; margin-bottom: 15px; height: 1.2em; overflow: hidden; }
         .price { font-size: 1.4em; font-weight: bold; color: #2c3e50; margin: 10px 0; }
         .metrics { display: flex; justify-content: space-between; font-size: 0.85em; color: #34495e; border-top: 1px solid #eee; padding-top: 10px; }
         .badge { display: inline-block; background: #e8f5e9; color: #2ecc71; padding: 4px 10px; border-radius: 5px; font-size: 0.75em; font-weight: bold; margin-top: 10px; }
         #update-time { color: #95a5a6; font-size: 0.9em; }
+        #status-msg { text-align: center; color: #e67e22; font-weight: bold; }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
             <h1>NASDAQ Top 12 Stock Picks</h1>
-            <p id="update-time">Detecting market gems...</p>
+            <p id="update-time">AI Analysis in Progress...</p>
+            <div id="status-msg">Fetching Latest Market Gems...</div>
         </header>
         <div id="stock-grid" class="grid"></div>
     </div>
 
     <script>
-        fetch('live_stocks.json')
-            .then(response => response.json())
+        // We use a timestamp to force the browser to get the NEWEST data
+        const cacheBuster = new Date().getTime();
+        
+        fetch('./live_stocks.json?v=' + cacheBuster)
+            .then(response => {
+                if (!response.ok) throw new Error("JSON file not found");
+                return response.json();
+            })
             .then(data => {
+                document.getElementById('status-msg').style.display = 'none';
                 document.getElementById('update-time').innerText = "Last AI Scan: " + data.last_updated;
                 const grid = document.getElementById('stock-grid');
+                grid.innerHTML = ''; // Clear "Loading" content
+                
                 data.stocks.forEach(stock => {
                     grid.innerHTML += `
                         <div class="card">
@@ -50,7 +61,10 @@
                         </div>`;
                 });
             })
-            .catch(err => console.error("Could not load data:", err));
+            .catch(err => {
+                document.getElementById('status-msg').innerText = "Error: live_stocks.json missing. Run the GitHub Action first!";
+                console.error(err);
+            });
     </script>
 </body>
 </html>
