@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-04-07 20:35",
+    "last_updated": "2026-04-07 22:27",
     "stocks": [
         {
             "symbol": "CMG",
@@ -28,186 +28,108 @@
             "reason": "Market Cap: $23.0B | PEG: 5"
         },
         {
-            "symbol": "LUV",
-            "name": "Southwest Airlines Company",
-            "price": 37.87,
+            "symbol": "T",
+            "name": "AT&T Inc.",
+            "price": 28.04,
             "score": 40,
             "metrics": {
                 "PEG": 5,
-                "ROE": "5%",
-                "PE": 8.1
+                "ROE": "19%",
+                "PE": 11.0
             },
             "tag": "Hidden Value",
-            "reason": "Market Cap: $18.6B | PEG: 5"
+            "reason": "Market Cap: $196.3B | PEG: 5"
         },
         {
-            "symbol": "PFE",
-            "name": "Pfizer, Inc.",
-            "price": 27.1,
+            "symbol": "HST",
+            "name": "Host Hotels & Resorts, Inc.",
+            "price": 19.09,
             "score": 40,
             "metrics": {
                 "PEG": 5,
-                "ROE": "9%",
-                "PE": 9.6
-            },
-            "tag": "Hidden Value",
-            "reason": "Market Cap: $154.2B | PEG: 5"
-        },
-        {
-            "symbol": "PCG",
-            "name": "Pacific Gas & Electric Co.",
-            "price": 17.62,
-            "score": 40,
-            "metrics": {
-                "PEG": 5,
-                "ROE": "8%",
-                "PE": 9.8
-            },
-            "tag": "Hidden Value",
-            "reason": "Market Cap: $38.7B | PEG: 5"
-        },
-        {
-            "symbol": "F",
-            "name": "Ford Motor Company",
-            "price": 11.52,
-            "score": 40,
-            "metrics": {
-                "PEG": 5,
-                "ROE": "-20%",
-                "PE": 6.3
-            },
-            "tag": "Hidden Value",
-            "reason": "Market Cap: $46.2B | PEG: 5"
-        },
-        {
-            "symbol": "FAST",
-            "name": "Fastenal Company",
-            "price": 45.64,
-            "score": 40,
-            "metrics": {
-                "PEG": 5,
-                "ROE": "33%",
-                "PE": 33.6
+                "ROE": "11%",
+                "PE": 19.7
             },
             "tag": "Growth Gem",
-            "reason": "Market Cap: $52.4B | PEG: 5"
+            "reason": "Market Cap: $13.3B | PEG: 5"
         },
         {
-            "symbol": "MOS",
-            "name": "Mosaic Company (The)",
-            "price": 26.37,
+            "symbol": "VICI",
+            "name": "VICI Properties Inc.",
+            "price": 27.83,
             "score": 40,
             "metrics": {
                 "PEG": 5,
-                "ROE": "5%",
-                "PE": 10.7
+                "ROE": "10%",
+                "PE": 9.4
             },
             "tag": "Hidden Value",
-            "reason": "Market Cap: $8.4B | PEG: 5"
+            "reason": "Market Cap: $29.7B | PEG: 5"
         },
         {
-            "symbol": "RF",
-            "name": "Regions Financial Corporation",
-            "price": 26.61,
-            "score": 40,
-            "metrics": {
-                "PEG": 5,
-                "ROE": "12%",
-                "PE": 9.3
-            },
-            "tag": "Hidden Value",
-            "reason": "Market Cap: $23.0B | PEG: 5"
-        },
-        {
-            "symbol": "NWS",
-            "name": "News Corporation",
-            "price": 28.1,
+            "symbol": "HRL",
+            "name": "Hormel Foods Corporation",
+            "price": 21.45,
             "score": 40,
             "metrics": {
                 "PEG": 5,
                 "ROE": "6%",
-                "PE": 22.6
+                "PE": 13.6
+            },
+            "tag": "Hidden Value",
+            "reason": "Market Cap: $11.8B | PEG: 5"
+        },
+        {
+            "symbol": "KHC",
+            "name": "The Kraft Heinz Company",
+            "price": 23.18,
+            "score": 40,
+            "metrics": {
+                "PEG": 5,
+                "ROE": "-13%",
+                "PE": 10.8
+            },
+            "tag": "Hidden Value",
+            "reason": "Market Cap: $27.4B | PEG: 5"
+        },
+        {
+            "symbol": "TTD",
+            "name": "The Trade Desk, Inc.",
+            "price": 20.7,
+            "score": 40,
+            "metrics": {
+                "PEG": 5,
+                "ROE": "16%",
+                "PE": 8.7
+            },
+            "tag": "Hidden Value",
+            "reason": "Market Cap: $9.9B | PEG: 5"
+        },
+        {
+            "symbol": "NKE",
+            "name": "Nike, Inc.",
+            "price": 42.69,
+            "score": 40,
+            "metrics": {
+                "PEG": 5,
+                "ROE": "16%",
+                "PE": 21.9
             },
             "tag": "Growth Gem",
-            "reason": "Market Cap: $15.5B | PEG: 5"
+            "reason": "Market Cap: $63.2B | PEG: 5"
         },
         {
-            "symbol": "FITB",
-            "name": "Fifth Third Bancorp",
-            "price": 47.79,
+            "symbol": "VZ",
+            "name": "Verizon Communications Inc.",
+            "price": 48.62,
             "score": 40,
             "metrics": {
                 "PEG": 5,
-                "ROE": "12%",
-                "PE": 9.8
-            },
-            "tag": "Hidden Value",
-            "reason": "Market Cap: $43.3B | PEG: 5"
-        },
-        {
-            "symbol": "UDR",
-            "name": "UDR, Inc.",
-            "price": 34.71,
-            "score": 40,
-            "metrics": {
-                "PEG": 5,
-                "ROE": "9%",
-                "PE": 63.1
-            },
-            "tag": "Growth Gem",
-            "reason": "Market Cap: $13.1B | PEG: 5"
-        },
-        {
-            "symbol": "CCL",
-            "name": "Carnival Corporation",
-            "price": 25.2,
-            "score": 40,
-            "metrics": {
-                "PEG": 5,
-                "ROE": "28%",
-                "PE": 9.7
-            },
-            "tag": "Hidden Value",
-            "reason": "Market Cap: $34.9B | PEG: 5"
-        },
-        {
-            "symbol": "KEY",
-            "name": "KeyCorp",
-            "price": 20.62,
-            "score": 40,
-            "metrics": {
-                "PEG": 5,
-                "ROE": "9%",
-                "PE": 9.7
-            },
-            "tag": "Hidden Value",
-            "reason": "Market Cap: $22.5B | PEG: 5"
-        },
-        {
-            "symbol": "TFC",
-            "name": "Truist Financial Corporation",
-            "price": 47.83,
-            "score": 40,
-            "metrics": {
-                "PEG": 5,
-                "ROE": "8%",
+                "ROE": "17%",
                 "PE": 9.3
             },
             "tag": "Hidden Value",
-            "reason": "Market Cap: $61.2B | PEG: 5"
-        },
-        {
-            "symbol": "ARE",
-            "name": "Alexandria Real Estate Equities",
-            "price": 44.13,
-            "score": 40,
-            "metrics": {
-                "PEG": 5,
-                "ROE": "-6%",
-                "PE": -551.6
-            },
-            "tag": "Hidden Value",
-            "reason": "Market Cap: $7.6B | PEG: 5"
+            "reason": "Market Cap: $205.1B | PEG: 5"
         },
         {
             "symbol": "FIS",
@@ -223,43 +145,121 @@
             "reason": "Market Cap: $23.9B | PEG: 5"
         },
         {
-            "symbol": "SW",
-            "name": "Smurfit WestRock plc",
-            "price": 39.23,
+            "symbol": "IVZ",
+            "name": "Invesco Ltd",
+            "price": 22.77,
             "score": 40,
             "metrics": {
                 "PEG": 5,
-                "ROE": "4%",
-                "PE": 12.3
+                "ROE": "-1%",
+                "PE": 7.7
             },
             "tag": "Hidden Value",
-            "reason": "Market Cap: $20.6B | PEG: 5"
+            "reason": "Market Cap: $10.1B | PEG: 5"
         },
         {
-            "symbol": "AMCR",
-            "name": "Amcor plc",
-            "price": 39.04,
+            "symbol": "NWSA",
+            "name": "News Corporation",
+            "price": 24.43,
             "score": 40,
             "metrics": {
                 "PEG": 5,
-                "ROE": "8%",
+                "ROE": "6%",
+                "PE": 19.7
+            },
+            "tag": "Growth Gem",
+            "reason": "Market Cap: $14.1B | PEG: 5"
+        },
+        {
+            "symbol": "KEY",
+            "name": "KeyCorp",
+            "price": 20.62,
+            "score": 40,
+            "metrics": {
+                "PEG": 5,
+                "ROE": "9%",
+                "PE": 9.7
+            },
+            "tag": "Hidden Value",
+            "reason": "Market Cap: $22.5B | PEG: 5"
+        },
+        {
+            "symbol": "CSX",
+            "name": "CSX Corporation",
+            "price": 41.42,
+            "score": 40,
+            "metrics": {
+                "PEG": 5,
+                "ROE": "23%",
+                "PE": 19.8
+            },
+            "tag": "Growth Gem",
+            "reason": "Market Cap: $77.0B | PEG: 5"
+        },
+        {
+            "symbol": "FITB",
+            "name": "Fifth Third Bancorp",
+            "price": 47.79,
+            "score": 40,
+            "metrics": {
+                "PEG": 5,
+                "ROE": "12%",
+                "PE": 9.8
+            },
+            "tag": "Hidden Value",
+            "reason": "Market Cap: $43.3B | PEG: 5"
+        },
+        {
+            "symbol": "CNC",
+            "name": "Centene Corporation",
+            "price": 36.31,
+            "score": 40,
+            "metrics": {
+                "PEG": 5,
+                "ROE": "-29%",
                 "PE": 8.9
             },
             "tag": "Hidden Value",
-            "reason": "Market Cap: $18.0B | PEG: 5"
+            "reason": "Market Cap: $17.9B | PEG: 5"
         },
         {
-            "symbol": "PPL",
-            "name": "PPL Corporation",
-            "price": 38.86,
+            "symbol": "GEN",
+            "name": "Gen Digital Inc.",
+            "price": 19.18,
             "score": 40,
             "metrics": {
                 "PEG": 5,
-                "ROE": "8%",
-                "PE": 18.4
+                "ROE": "27%",
+                "PE": 6.7
+            },
+            "tag": "Hidden Value",
+            "reason": "Market Cap: $11.8B | PEG: 5"
+        },
+        {
+            "symbol": "KMI",
+            "name": "Kinder Morgan, Inc.",
+            "price": 33.3,
+            "score": 40,
+            "metrics": {
+                "PEG": 5,
+                "ROE": "10%",
+                "PE": 22.8
             },
             "tag": "Growth Gem",
-            "reason": "Market Cap: $29.2B | PEG: 5"
+            "reason": "Market Cap: $74.1B | PEG: 5"
+        },
+        {
+            "symbol": "KVUE",
+            "name": "Kenvue Inc.",
+            "price": 16.73,
+            "score": 40,
+            "metrics": {
+                "PEG": 5,
+                "ROE": "14%",
+                "PE": 13.8
+            },
+            "tag": "Hidden Value",
+            "reason": "Market Cap: $32.1B | PEG: 5"
         }
     ]
 }
