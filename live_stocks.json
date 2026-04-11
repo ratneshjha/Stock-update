@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-04-10 22:25",
+    "last_updated": "2026-04-11 01:14",
     "stocks": [
         {
             "symbol": "CMG",
@@ -28,30 +28,134 @@
             "reason": "Market Cap: $23.7B | PEG: 5"
         },
         {
-            "symbol": "GEN",
-            "name": "Gen Digital Inc.",
-            "price": 17.89,
+            "symbol": "WBD",
+            "name": "Warner Bros. Discovery, Inc. - ",
+            "price": 27.44,
             "score": 40,
             "metrics": {
                 "PEG": 5,
-                "ROE": "27%",
-                "PE": 6.2
+                "ROE": "2%",
+                "PE": -1646.1
             },
             "tag": "Hidden Value",
-            "reason": "Market Cap: $11.0B | PEG: 5"
+            "reason": "Market Cap: $68.8B | PEG: 5"
         },
         {
-            "symbol": "INVH",
-            "name": "Invitation Homes Inc.",
-            "price": 26.02,
+            "symbol": "VICI",
+            "name": "VICI Properties Inc.",
+            "price": 28.11,
             "score": 40,
             "metrics": {
                 "PEG": 5,
-                "ROE": "6%",
-                "PE": 36.3
+                "ROE": "10%",
+                "PE": 9.5
+            },
+            "tag": "Hidden Value",
+            "reason": "Market Cap: $30.0B | PEG: 5"
+        },
+        {
+            "symbol": "IP",
+            "name": "International Paper Company",
+            "price": 36.5,
+            "score": 40,
+            "metrics": {
+                "PEG": 5,
+                "ROE": "-25%",
+                "PE": 12.8
+            },
+            "tag": "Hidden Value",
+            "reason": "Market Cap: $19.3B | PEG: 5"
+        },
+        {
+            "symbol": "MOS",
+            "name": "Mosaic Company (The)",
+            "price": 24.76,
+            "score": 40,
+            "metrics": {
+                "PEG": 5,
+                "ROE": "5%",
+                "PE": 10.1
+            },
+            "tag": "Hidden Value",
+            "reason": "Market Cap: $7.9B | PEG: 5"
+        },
+        {
+            "symbol": "HPE",
+            "name": "Hewlett Packard Enterprise Comp",
+            "price": 24.89,
+            "score": 40,
+            "metrics": {
+                "PEG": 5,
+                "ROE": "0%",
+                "PE": 9.1
+            },
+            "tag": "Hidden Value",
+            "reason": "Market Cap: $33.1B | PEG: 5"
+        },
+        {
+            "symbol": "BAX",
+            "name": "Baxter International Inc.",
+            "price": 17.15,
+            "score": 40,
+            "metrics": {
+                "PEG": 5,
+                "ROE": "-14%",
+                "PE": 8.5
+            },
+            "tag": "Hidden Value",
+            "reason": "Market Cap: $8.9B | PEG: 5"
+        },
+        {
+            "symbol": "PYPL",
+            "name": "PayPal Holdings, Inc.",
+            "price": 45.24,
+            "score": 40,
+            "metrics": {
+                "PEG": 5,
+                "ROE": "26%",
+                "PE": 7.8
+            },
+            "tag": "Hidden Value",
+            "reason": "Market Cap: $41.7B | PEG: 5"
+        },
+        {
+            "symbol": "CPRT",
+            "name": "Copart, Inc.",
+            "price": 32.76,
+            "score": 40,
+            "metrics": {
+                "PEG": 5,
+                "ROE": "17%",
+                "PE": 19.5
             },
             "tag": "Growth Gem",
-            "reason": "Market Cap: $15.9B | PEG: 5"
+            "reason": "Market Cap: $31.7B | PEG: 5"
+        },
+        {
+            "symbol": "NCLH",
+            "name": "Norwegian Cruise Line Holdings ",
+            "price": 19.96,
+            "score": 40,
+            "metrics": {
+                "PEG": 5,
+                "ROE": "23%",
+                "PE": 7.6
+            },
+            "tag": "Hidden Value",
+            "reason": "Market Cap: $9.1B | PEG: 5"
+        },
+        {
+            "symbol": "NI",
+            "name": "NiSource Inc",
+            "price": 48.05,
+            "score": 40,
+            "metrics": {
+                "PEG": 5,
+                "ROE": "9%",
+                "PE": 21.6
+            },
+            "tag": "Growth Gem",
+            "reason": "Market Cap: $23.0B | PEG: 5"
         },
         {
             "symbol": "AES",
@@ -67,95 +171,17 @@
             "reason": "Market Cap: $10.3B | PEG: 5"
         },
         {
-            "symbol": "SMCI",
-            "name": "Super Micro Computer, Inc.",
-            "price": 25.26,
-            "score": 40,
-            "metrics": {
-                "PEG": 5,
-                "ROE": "13%",
-                "PE": 8.4
-            },
-            "tag": "Hidden Value",
-            "reason": "Market Cap: $15.2B | PEG: 5"
-        },
-        {
-            "symbol": "F",
-            "name": "Ford Motor Company",
-            "price": 12.13,
-            "score": 40,
-            "metrics": {
-                "PEG": 5,
-                "ROE": "-20%",
-                "PE": 6.6
-            },
-            "tag": "Hidden Value",
-            "reason": "Market Cap: $48.7B | PEG: 5"
-        },
-        {
-            "symbol": "KHC",
-            "name": "The Kraft Heinz Company",
-            "price": 23.06,
-            "score": 40,
-            "metrics": {
-                "PEG": 5,
-                "ROE": "-13%",
-                "PE": 10.8
-            },
-            "tag": "Hidden Value",
-            "reason": "Market Cap: $27.3B | PEG: 5"
-        },
-        {
-            "symbol": "WBD",
-            "name": "Warner Bros. Discovery, Inc. - ",
-            "price": 27.44,
-            "score": 40,
-            "metrics": {
-                "PEG": 5,
-                "ROE": "2%",
-                "PE": -1646.1
-            },
-            "tag": "Hidden Value",
-            "reason": "Market Cap: $68.8B | PEG: 5"
-        },
-        {
-            "symbol": "BF-B",
-            "name": "Brown Forman Inc",
-            "price": 29.49,
-            "score": 40,
-            "metrics": {
-                "PEG": 5,
-                "ROE": "20%",
-                "PE": 17.4
-            },
-            "tag": "Hidden Value",
-            "reason": "Market Cap: $13.5B | PEG: 5"
-        },
-        {
-            "symbol": "PCG",
-            "name": "Pacific Gas & Electric Co.",
-            "price": 18.54,
+            "symbol": "PPL",
+            "name": "PPL Corporation",
+            "price": 39.65,
             "score": 40,
             "metrics": {
                 "PEG": 5,
                 "ROE": "8%",
-                "PE": 10.3
+                "PE": 18.8
             },
-            "tag": "Hidden Value",
-            "reason": "Market Cap: $40.8B | PEG: 5"
-        },
-        {
-            "symbol": "APA",
-            "name": "APA Corporation",
-            "price": 38.63,
-            "score": 40,
-            "metrics": {
-                "PEG": 5,
-                "ROE": "25%",
-                "PE": 10.0
-            },
-            "tag": "Hidden Value",
-            "reason": "Market Cap: $13.6B | PEG: 5"
+            "tag": "Growth Gem",
+            "reason": "Market Cap: $29.8B | PEG: 5"
         },
         {
             "symbol": "PFE",
@@ -171,56 +197,43 @@
             "reason": "Market Cap: $153.1B | PEG: 5"
         },
         {
-            "symbol": "LUV",
-            "name": "Southwest Airlines Company",
-            "price": 39.56,
+            "symbol": "INVH",
+            "name": "Invitation Homes Inc.",
+            "price": 26.02,
             "score": 40,
             "metrics": {
                 "PEG": 5,
-                "ROE": "5%",
-                "PE": 8.8
+                "ROE": "6%",
+                "PE": 36.3
             },
-            "tag": "Hidden Value",
-            "reason": "Market Cap: $19.4B | PEG: 5"
+            "tag": "Growth Gem",
+            "reason": "Market Cap: $15.9B | PEG: 5"
         },
         {
-            "symbol": "VZ",
-            "name": "Verizon Communications Inc.",
-            "price": 46.04,
+            "symbol": "PCG",
+            "name": "Pacific Gas & Electric Co.",
+            "price": 18.54,
             "score": 40,
             "metrics": {
                 "PEG": 5,
-                "ROE": "17%",
-                "PE": 8.8
+                "ROE": "8%",
+                "PE": 10.3
             },
             "tag": "Hidden Value",
-            "reason": "Market Cap: $194.2B | PEG: 5"
+            "reason": "Market Cap: $40.8B | PEG: 5"
         },
         {
-            "symbol": "DVN",
-            "name": "Devon Energy Corporation",
-            "price": 47.79,
-            "score": 40,
-            "metrics": {
-                "PEG": 5,
-                "ROE": "18%",
-                "PE": 9.5
-            },
-            "tag": "Hidden Value",
-            "reason": "Market Cap: $29.7B | PEG: 5"
-        },
-        {
-            "symbol": "HAL",
-            "name": "Halliburton Company",
-            "price": 37.59,
+            "symbol": "CTRA",
+            "name": "Coterra Energy Inc.",
+            "price": 33.41,
             "score": 40,
             "metrics": {
                 "PEG": 5,
                 "ROE": "12%",
-                "PE": 13.9
+                "PE": 11.4
             },
             "tag": "Hidden Value",
-            "reason": "Market Cap: $31.5B | PEG: 5"
+            "reason": "Market Cap: $25.4B | PEG: 5"
         },
         {
             "symbol": "CSX",
@@ -236,30 +249,17 @@
             "reason": "Market Cap: $78.6B | PEG: 5"
         },
         {
-            "symbol": "CSGP",
-            "name": "CoStar Group, Inc.",
-            "price": 36.48,
+            "symbol": "IVZ",
+            "name": "Invesco Ltd",
+            "price": 23.58,
             "score": 40,
             "metrics": {
                 "PEG": 5,
-                "ROE": "0%",
-                "PE": 20.5
-            },
-            "tag": "Growth Gem",
-            "reason": "Market Cap: $15.5B | PEG: 5"
-        },
-        {
-            "symbol": "PYPL",
-            "name": "PayPal Holdings, Inc.",
-            "price": 45.24,
-            "score": 40,
-            "metrics": {
-                "PEG": 5,
-                "ROE": "26%",
-                "PE": 7.8
+                "ROE": "-1%",
+                "PE": 8.1
             },
             "tag": "Hidden Value",
-            "reason": "Market Cap: $41.7B | PEG: 5"
+            "reason": "Market Cap: $10.5B | PEG: 5"
         }
     ]
 }
