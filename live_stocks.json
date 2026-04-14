@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-04-14 07:16",
+    "last_updated": "2026-04-14 09:08",
     "stocks": [
         {
             "symbol": "CMG",
@@ -28,30 +28,17 @@
             "reason": "Market Cap: $23.9B | PEG: 5"
         },
         {
-            "symbol": "KDP",
-            "name": "Keurig Dr Pepper Inc.",
-            "price": 26.04,
+            "symbol": "HBAN",
+            "name": "Huntington Bancshares Incorpora",
+            "price": 16.62,
             "score": 40,
             "metrics": {
                 "PEG": 5,
-                "ROE": "8%",
-                "PE": 10.3
+                "ROE": "10%",
+                "PE": 8.7
             },
             "tag": "Hidden Value",
-            "reason": "Market Cap: $35.4B | PEG: 5"
-        },
-        {
-            "symbol": "NWSA",
-            "name": "News Corporation",
-            "price": 24.94,
-            "score": 40,
-            "metrics": {
-                "PEG": 5,
-                "ROE": "6%",
-                "PE": 20.1
-            },
-            "tag": "Growth Gem",
-            "reason": "Market Cap: $14.4B | PEG: 5"
+            "reason": "Market Cap: $33.9B | PEG: 5"
         },
         {
             "symbol": "RF",
@@ -67,82 +54,69 @@
             "reason": "Market Cap: $24.0B | PEG: 5"
         },
         {
-            "symbol": "INVH",
-            "name": "Invitation Homes Inc.",
-            "price": 25.96,
+            "symbol": "CCL",
+            "name": "Carnival Corporation",
+            "price": 27.75,
+            "score": 40,
+            "metrics": {
+                "PEG": 5,
+                "ROE": "28%",
+                "PE": 10.7
+            },
+            "tag": "Hidden Value",
+            "reason": "Market Cap: $38.4B | PEG: 5"
+        },
+        {
+            "symbol": "KIM",
+            "name": "Kimco Realty Corporation (HC)",
+            "price": 23.2,
             "score": 40,
             "metrics": {
                 "PEG": 5,
                 "ROE": "6%",
-                "PE": 36.7
+                "PE": 26.7
             },
             "tag": "Growth Gem",
-            "reason": "Market Cap: $15.8B | PEG: 5"
-        },
-        {
-            "symbol": "DOC",
-            "name": "Healthpeak Properties, Inc.",
-            "price": 16.5,
-            "score": 40,
-            "metrics": {
-                "PEG": 5,
-                "ROE": "1%",
-                "PE": 82.5
-            },
-            "tag": "Growth Gem",
-            "reason": "Market Cap: $11.5B | PEG: 5"
-        },
-        {
-            "symbol": "VZ",
-            "name": "Verizon Communications Inc.",
-            "price": 45.42,
-            "score": 40,
-            "metrics": {
-                "PEG": 5,
-                "ROE": "17%",
-                "PE": 8.6
-            },
-            "tag": "Hidden Value",
-            "reason": "Market Cap: $191.6B | PEG: 5"
-        },
-        {
-            "symbol": "SMCI",
-            "name": "Super Micro Computer, Inc.",
-            "price": 25.97,
-            "score": 40,
-            "metrics": {
-                "PEG": 5,
-                "ROE": "13%",
-                "PE": 8.6
-            },
-            "tag": "Hidden Value",
             "reason": "Market Cap: $15.6B | PEG: 5"
         },
         {
-            "symbol": "MGM",
-            "name": "MGM Resorts International",
-            "price": 36.75,
+            "symbol": "GIS",
+            "name": "General Mills, Inc.",
+            "price": 34.56,
             "score": 40,
             "metrics": {
                 "PEG": 5,
-                "ROE": "15%",
-                "PE": 15.7
+                "ROE": "24%",
+                "PE": 10.5
             },
             "tag": "Hidden Value",
-            "reason": "Market Cap: $10.1B | PEG: 5"
+            "reason": "Market Cap: $18.4B | PEG: 5"
         },
         {
-            "symbol": "UDR",
-            "name": "UDR, Inc.",
-            "price": 34.75,
+            "symbol": "IVZ",
+            "name": "Invesco Ltd",
+            "price": 24.3,
             "score": 40,
             "metrics": {
                 "PEG": 5,
-                "ROE": "9%",
-                "PE": 63.2
+                "ROE": "-1%",
+                "PE": 8.4
             },
-            "tag": "Growth Gem",
-            "reason": "Market Cap: $13.1B | PEG: 5"
+            "tag": "Hidden Value",
+            "reason": "Market Cap: $10.8B | PEG: 5"
+        },
+        {
+            "symbol": "AMCR",
+            "name": "Amcor plc",
+            "price": 40.96,
+            "score": 40,
+            "metrics": {
+                "PEG": 5,
+                "ROE": "8%",
+                "PE": 9.3
+            },
+            "tag": "Hidden Value",
+            "reason": "Market Cap: $18.9B | PEG: 5"
         },
         {
             "symbol": "CSGP",
@@ -158,17 +132,30 @@
             "reason": "Market Cap: $15.7B | PEG: 5"
         },
         {
-            "symbol": "DVN",
-            "name": "Devon Energy Corporation",
-            "price": 47.27,
+            "symbol": "FIS",
+            "name": "Fidelity National Information S",
+            "price": 46.43,
             "score": 40,
             "metrics": {
                 "PEG": 5,
-                "ROE": "18%",
-                "PE": 9.2
+                "ROE": "3%",
+                "PE": 6.7
             },
             "tag": "Hidden Value",
-            "reason": "Market Cap: $29.4B | PEG: 5"
+            "reason": "Market Cap: $24.0B | PEG: 5"
+        },
+        {
+            "symbol": "VTRS",
+            "name": "Viatris Inc.",
+            "price": 13.83,
+            "score": 40,
+            "metrics": {
+                "PEG": 5,
+                "ROE": "-21%",
+                "PE": 5.2
+            },
+            "tag": "Hidden Value",
+            "reason": "Market Cap: $16.1B | PEG: 5"
         },
         {
             "symbol": "APA",
@@ -184,82 +171,95 @@
             "reason": "Market Cap: $14.0B | PEG: 5"
         },
         {
-            "symbol": "CSX",
-            "name": "CSX Corporation",
-            "price": 42.35,
+            "symbol": "HST",
+            "name": "Host Hotels & Resorts, Inc.",
+            "price": 20.27,
             "score": 40,
             "metrics": {
                 "PEG": 5,
-                "ROE": "23%",
-                "PE": 20.2
+                "ROE": "11%",
+                "PE": 21.1
             },
             "tag": "Growth Gem",
-            "reason": "Market Cap: $78.8B | PEG: 5"
+            "reason": "Market Cap: $14.1B | PEG: 5"
         },
         {
-            "symbol": "DD",
-            "name": "DuPont de Nemours, Inc.",
-            "price": 47.15,
+            "symbol": "CPRT",
+            "name": "Copart, Inc.",
+            "price": 33.25,
             "score": 40,
             "metrics": {
                 "PEG": 5,
-                "ROE": "1%",
-                "PE": 18.6
+                "ROE": "17%",
+                "PE": 19.8
             },
             "tag": "Growth Gem",
-            "reason": "Market Cap: $19.3B | PEG: 5"
+            "reason": "Market Cap: $32.2B | PEG: 5"
         },
         {
-            "symbol": "T",
-            "name": "AT&T Inc.",
-            "price": 25.61,
+            "symbol": "ARE",
+            "name": "Alexandria Real Estate Equities",
+            "price": 43.75,
             "score": 40,
             "metrics": {
                 "PEG": 5,
-                "ROE": "19%",
-                "PE": 10.1
+                "ROE": "-6%",
+                "PE": -546.9
             },
             "tag": "Hidden Value",
-            "reason": "Market Cap: $179.3B | PEG: 5"
+            "reason": "Market Cap: $7.6B | PEG: 5"
         },
         {
-            "symbol": "NCLH",
-            "name": "Norwegian Cruise Line Holdings ",
-            "price": 20.26,
+            "symbol": "HPQ",
+            "name": "HP Inc.",
+            "price": 19.23,
             "score": 40,
             "metrics": {
                 "PEG": 5,
-                "ROE": "23%",
-                "PE": 8.0
+                "ROE": "0%",
+                "PE": 6.5
             },
             "tag": "Hidden Value",
-            "reason": "Market Cap: $9.2B | PEG: 5"
+            "reason": "Market Cap: $17.7B | PEG: 5"
         },
         {
-            "symbol": "F",
-            "name": "Ford Motor Company",
-            "price": 12.16,
+            "symbol": "CNC",
+            "name": "Centene Corporation",
+            "price": 37.47,
             "score": 40,
             "metrics": {
                 "PEG": 5,
-                "ROE": "-20%",
-                "PE": 6.6
+                "ROE": "-29%",
+                "PE": 9.2
             },
             "tag": "Hidden Value",
-            "reason": "Market Cap: $48.8B | PEG: 5"
+            "reason": "Market Cap: $18.4B | PEG: 5"
         },
         {
-            "symbol": "KVUE",
-            "name": "Kenvue Inc.",
-            "price": 17.26,
+            "symbol": "BEN",
+            "name": "Franklin Resources, Inc.",
+            "price": 25.67,
             "score": 40,
             "metrics": {
                 "PEG": 5,
-                "ROE": "14%",
-                "PE": 14.3
+                "ROE": "4%",
+                "PE": 9.1
             },
             "tag": "Hidden Value",
-            "reason": "Market Cap: $33.1B | PEG: 5"
+            "reason": "Market Cap: $13.4B | PEG: 5"
+        },
+        {
+            "symbol": "HRL",
+            "name": "Hormel Foods Corporation",
+            "price": 20.48,
+            "score": 40,
+            "metrics": {
+                "PEG": 5,
+                "ROE": "6%",
+                "PE": 13.0
+            },
+            "tag": "Hidden Value",
+            "reason": "Market Cap: $11.3B | PEG: 5"
         }
     ]
 }
