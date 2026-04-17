@@ -1,31 +1,18 @@
 {
-    "last_updated": "2026-04-17 20:34",
+    "last_updated": "2026-04-17 22:27",
     "stocks": [
         {
-            "symbol": "GEN",
-            "name": "Gen Digital Inc.",
-            "price": 20.12,
+            "symbol": "CCL",
+            "name": "Carnival Corporation",
+            "price": 29.22,
             "score": 98.5,
             "metrics": {
-                "PEG": 0.4842,
-                "ROE": "27%",
-                "PE": 7.0
+                "PEG": 1.08,
+                "ROE": "28%",
+                "PE": 11.3
             },
             "tag": "Hidden Value",
-            "reason": "Market Cap: $12.4B | PEG: 0.4842"
-        },
-        {
-            "symbol": "TSCO",
-            "name": "Tractor Supply Company",
-            "price": 45.01,
-            "score": 98.5,
-            "metrics": {
-                "PEG": 1.8035,
-                "ROE": "45%",
-                "PE": 18.8
-            },
-            "tag": "Growth Gem",
-            "reason": "Market Cap: $23.7B | PEG: 1.8035"
+            "reason": "Market Cap: $40.5B | PEG: 1.08"
         },
         {
             "symbol": "NCLH",
@@ -41,17 +28,30 @@
             "reason": "Market Cap: $9.6B | PEG: 0.4755"
         },
         {
-            "symbol": "CCL",
-            "name": "Carnival Corporation",
-            "price": 29.22,
+            "symbol": "CMG",
+            "name": "Chipotle Mexican Grill, Inc.",
+            "price": 35.83,
             "score": 98.5,
             "metrics": {
-                "PEG": 1.0847,
-                "ROE": "28%",
-                "PE": 11.3
+                "PEG": 1.97,
+                "ROE": "47%",
+                "PE": 26.3
             },
-            "tag": "Hidden Value",
-            "reason": "Market Cap: $40.5B | PEG: 1.0847"
+            "tag": "Growth Gem",
+            "reason": "Market Cap: $47.4B | PEG: 1.97"
+        },
+        {
+            "symbol": "TSCO",
+            "name": "Tractor Supply Company",
+            "price": 45.01,
+            "score": 98.5,
+            "metrics": {
+                "PEG": 1.8035,
+                "ROE": "45%",
+                "PE": 18.8
+            },
+            "tag": "Growth Gem",
+            "reason": "Market Cap: $23.7B | PEG: 1.8035"
         },
         {
             "symbol": "APA",
@@ -59,25 +59,25 @@
             "price": 35.74,
             "score": 98.5,
             "metrics": {
-                "PEG": 0.9506,
+                "PEG": 0.95,
                 "ROE": "25%",
                 "PE": 9.3
             },
             "tag": "Hidden Value",
-            "reason": "Market Cap: $12.6B | PEG: 0.9506"
+            "reason": "Market Cap: $12.6B | PEG: 0.95"
         },
         {
-            "symbol": "CMG",
-            "name": "Chipotle Mexican Grill, Inc.",
-            "price": 35.83,
+            "symbol": "GEN",
+            "name": "Gen Digital Inc.",
+            "price": 20.12,
             "score": 98.5,
             "metrics": {
-                "PEG": 1.9716,
-                "ROE": "47%",
-                "PE": 26.3
+                "PEG": 0.48,
+                "ROE": "27%",
+                "PE": 7.0
             },
-            "tag": "Growth Gem",
-            "reason": "Market Cap: $47.4B | PEG: 1.9716"
+            "tag": "Hidden Value",
+            "reason": "Market Cap: $12.4B | PEG: 0.48"
         },
         {
             "symbol": "TTD",
@@ -98,12 +98,12 @@
             "price": 20.99,
             "score": 77.3,
             "metrics": {
-                "PEG": 0.6228,
+                "PEG": 0.62,
                 "ROE": "14%",
                 "PE": 9.4
             },
             "tag": "Hidden Value",
-            "reason": "Market Cap: $6.3B | PEG: 0.6228"
+            "reason": "Market Cap: $6.3B | PEG: 0.62"
         },
         {
             "symbol": "VZ",
@@ -174,14 +174,14 @@
             "symbol": "FAST",
             "name": "Fastenal Company",
             "price": 45.78,
-            "score": 60.1,
+            "score": 60.0,
             "metrics": {
-                "PEG": 3.225,
+                "PEG": 3.23,
                 "ROE": "34%",
                 "PE": 33.7
             },
             "tag": "Growth Gem",
-            "reason": "Market Cap: $52.6B | PEG: 3.225"
+            "reason": "Market Cap: $52.6B | PEG: 3.23"
         },
         {
             "symbol": "SW",
@@ -241,12 +241,12 @@
             "price": 48.5,
             "score": 56.1,
             "metrics": {
-                "PEG": 0.2711,
+                "PEG": 0.27,
                 "ROE": "3%",
                 "PE": 7.0
             },
             "tag": "Hidden Value",
-            "reason": "Market Cap: $25.1B | PEG: 0.2711"
+            "reason": "Market Cap: $25.1B | PEG: 0.27"
         },
         {
             "symbol": "NKE",
