@@ -1,45 +1,6 @@
 {
-    "last_updated": "2026-04-17 09:07",
+    "last_updated": "2026-04-17 10:45",
     "stocks": [
-        {
-            "symbol": "CMG",
-            "name": "Chipotle Mexican Grill, Inc.",
-            "price": 35.08,
-            "score": 98.5,
-            "metrics": {
-                "PEG": 1.9716,
-                "ROE": "47%",
-                "PE": 25.8
-            },
-            "tag": "Growth Gem",
-            "reason": "Market Cap: $46.4B | PEG: 1.9716"
-        },
-        {
-            "symbol": "CCL",
-            "name": "Carnival Corporation",
-            "price": 27.31,
-            "score": 98.5,
-            "metrics": {
-                "PEG": 1.0847,
-                "ROE": "28%",
-                "PE": 10.5
-            },
-            "tag": "Hidden Value",
-            "reason": "Market Cap: $37.8B | PEG: 1.0847"
-        },
-        {
-            "symbol": "APA",
-            "name": "APA Corporation",
-            "price": 37.9,
-            "score": 98.5,
-            "metrics": {
-                "PEG": 0.9506,
-                "ROE": "25%",
-                "PE": 9.7
-            },
-            "tag": "Hidden Value",
-            "reason": "Market Cap: $13.4B | PEG: 0.9506"
-        },
         {
             "symbol": "TSCO",
             "name": "Tractor Supply Company",
@@ -67,6 +28,19 @@
             "reason": "Market Cap: $12.2B | PEG: 0.4842"
         },
         {
+            "symbol": "PYPL",
+            "name": "PayPal Holdings, Inc.",
+            "price": 49.81,
+            "score": 98.5,
+            "metrics": {
+                "PEG": 0.9096,
+                "ROE": "26%",
+                "PE": 8.6
+            },
+            "tag": "Hidden Value",
+            "reason": "Market Cap: $45.9B | PEG: 0.9096"
+        },
+        {
             "symbol": "NCLH",
             "name": "Norwegian Cruise Line Holdings ",
             "price": 20.03,
@@ -80,17 +54,43 @@
             "reason": "Market Cap: $9.1B | PEG: 0.4755"
         },
         {
-            "symbol": "PYPL",
-            "name": "PayPal Holdings, Inc.",
-            "price": 49.81,
+            "symbol": "CCL",
+            "name": "Carnival Corporation",
+            "price": 27.31,
             "score": 98.5,
             "metrics": {
-                "PEG": 0.9096,
-                "ROE": "26%",
-                "PE": 8.6
+                "PEG": 1.0847,
+                "ROE": "28%",
+                "PE": 10.5
             },
             "tag": "Hidden Value",
-            "reason": "Market Cap: $45.9B | PEG: 0.9096"
+            "reason": "Market Cap: $37.8B | PEG: 1.0847"
+        },
+        {
+            "symbol": "CMG",
+            "name": "Chipotle Mexican Grill, Inc.",
+            "price": 35.08,
+            "score": 98.5,
+            "metrics": {
+                "PEG": 1.9716,
+                "ROE": "47%",
+                "PE": 25.8
+            },
+            "tag": "Growth Gem",
+            "reason": "Market Cap: $46.4B | PEG: 1.9716"
+        },
+        {
+            "symbol": "APA",
+            "name": "APA Corporation",
+            "price": 37.9,
+            "score": 98.5,
+            "metrics": {
+                "PEG": 0.9506,
+                "ROE": "25%",
+                "PE": 9.7
+            },
+            "tag": "Hidden Value",
+            "reason": "Market Cap: $13.4B | PEG: 0.9506"
         },
         {
             "symbol": "TTD",
@@ -230,7 +230,7 @@
             "metrics": {
                 "PEG": 0.8709,
                 "ROE": "8%",
-                "PE": 10.3
+                "PE": 10.4
             },
             "tag": "Hidden Value",
             "reason": "Market Cap: $35.4B | PEG: 0.8709"
