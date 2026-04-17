@@ -1,23 +1,10 @@
 {
-    "last_updated": "2026-04-17 18:41",
+    "last_updated": "2026-04-17 20:34",
     "stocks": [
-        {
-            "symbol": "NCLH",
-            "name": "Norwegian Cruise Line Holdings ",
-            "price": 21.255,
-            "score": 98.5,
-            "metrics": {
-                "PEG": 0.4755,
-                "ROE": "23%",
-                "PE": 8.4
-            },
-            "tag": "Hidden Value",
-            "reason": "Market Cap: $9.7B | PEG: 0.4755"
-        },
         {
             "symbol": "GEN",
             "name": "Gen Digital Inc.",
-            "price": 19.995,
+            "price": 20.12,
             "score": 98.5,
             "metrics": {
                 "PEG": 0.4842,
@@ -25,25 +12,38 @@
                 "PE": 7.0
             },
             "tag": "Hidden Value",
-            "reason": "Market Cap: $12.3B | PEG: 0.4842"
+            "reason": "Market Cap: $12.4B | PEG: 0.4842"
         },
         {
-            "symbol": "CMG",
-            "name": "Chipotle Mexican Grill, Inc.",
-            "price": 35.905,
+            "symbol": "TSCO",
+            "name": "Tractor Supply Company",
+            "price": 45.01,
             "score": 98.5,
             "metrics": {
-                "PEG": 1.9716,
-                "ROE": "47%",
-                "PE": 26.4
+                "PEG": 1.8035,
+                "ROE": "45%",
+                "PE": 18.8
             },
             "tag": "Growth Gem",
-            "reason": "Market Cap: $47.5B | PEG: 1.9716"
+            "reason": "Market Cap: $23.7B | PEG: 1.8035"
+        },
+        {
+            "symbol": "NCLH",
+            "name": "Norwegian Cruise Line Holdings ",
+            "price": 20.99,
+            "score": 98.5,
+            "metrics": {
+                "PEG": 0.4755,
+                "ROE": "23%",
+                "PE": 8.3
+            },
+            "tag": "Hidden Value",
+            "reason": "Market Cap: $9.6B | PEG: 0.4755"
         },
         {
             "symbol": "CCL",
             "name": "Carnival Corporation",
-            "price": 29.335,
+            "price": 29.22,
             "score": 98.5,
             "metrics": {
                 "PEG": 1.0847,
@@ -51,38 +51,38 @@
                 "PE": 11.3
             },
             "tag": "Hidden Value",
-            "reason": "Market Cap: $40.6B | PEG: 1.0847"
+            "reason": "Market Cap: $40.5B | PEG: 1.0847"
         },
         {
             "symbol": "APA",
             "name": "APA Corporation",
-            "price": 35.6601,
+            "price": 35.74,
             "score": 98.5,
             "metrics": {
                 "PEG": 0.9506,
                 "ROE": "25%",
-                "PE": 9.2
+                "PE": 9.3
             },
             "tag": "Hidden Value",
             "reason": "Market Cap: $12.6B | PEG: 0.9506"
         },
         {
-            "symbol": "TSCO",
-            "name": "Tractor Supply Company",
-            "price": 44.875,
+            "symbol": "CMG",
+            "name": "Chipotle Mexican Grill, Inc.",
+            "price": 35.83,
             "score": 98.5,
             "metrics": {
-                "PEG": 1.8035,
-                "ROE": "45%",
-                "PE": 18.7
+                "PEG": 1.9716,
+                "ROE": "47%",
+                "PE": 26.3
             },
             "tag": "Growth Gem",
-            "reason": "Market Cap: $23.6B | PEG: 1.8035"
+            "reason": "Market Cap: $47.4B | PEG: 1.9716"
         },
         {
             "symbol": "TTD",
             "name": "The Trade Desk, Inc.",
-            "price": 22.455,
+            "price": 22.47,
             "score": 78.3,
             "metrics": {
                 "PEG": 0.8729,
@@ -95,20 +95,20 @@
         {
             "symbol": "CPB",
             "name": "The Campbell's Company",
-            "price": 20.92,
+            "price": 20.99,
             "score": 77.3,
             "metrics": {
                 "PEG": 0.6228,
                 "ROE": "14%",
-                "PE": 9.3
+                "PE": 9.4
             },
             "tag": "Hidden Value",
-            "reason": "Market Cap: $6.2B | PEG: 0.6228"
+            "reason": "Market Cap: $6.3B | PEG: 0.6228"
         },
         {
             "symbol": "VZ",
             "name": "Verizon Communications Inc.",
-            "price": 46.725,
+            "price": 46.55,
             "score": 74.6,
             "metrics": {
                 "PEG": 1.1525,
@@ -116,12 +116,12 @@
                 "PE": 8.9
             },
             "tag": "Hidden Value",
-            "reason": "Market Cap: $197.1B | PEG: 1.1525"
+            "reason": "Market Cap: $196.3B | PEG: 1.1525"
         },
         {
             "symbol": "T",
             "name": "AT&T Inc.",
-            "price": 26.49,
+            "price": 26.51,
             "score": 72.3,
             "metrics": {
                 "PEG": 1.4874,
@@ -129,25 +129,25 @@
                 "PE": 10.4
             },
             "tag": "Hidden Value",
-            "reason": "Market Cap: $185.4B | PEG: 1.4874"
+            "reason": "Market Cap: $185.6B | PEG: 1.4874"
         },
         {
             "symbol": "AMCR",
             "name": "Amcor plc",
-            "price": 41.7301,
+            "price": 41.94,
             "score": 64.7,
             "metrics": {
                 "PEG": 0.4824,
                 "ROE": "8%",
-                "PE": 9.5
+                "PE": 9.6
             },
             "tag": "Hidden Value",
-            "reason": "Market Cap: $19.3B | PEG: 0.4824"
+            "reason": "Market Cap: $19.4B | PEG: 0.4824"
         },
         {
             "symbol": "LUV",
             "name": "Southwest Airlines Company",
-            "price": 42.9,
+            "price": 42.7,
             "score": 62.7,
             "metrics": {
                 "PEG": 0.2155,
@@ -155,25 +155,25 @@
                 "PE": 9.4
             },
             "tag": "Hidden Value",
-            "reason": "Market Cap: $21.1B | PEG: 0.2155"
+            "reason": "Market Cap: $21.0B | PEG: 0.2155"
         },
         {
             "symbol": "PCG",
             "name": "Pacific Gas & Electric Co.",
-            "price": 17.215,
+            "price": 17.26,
             "score": 60.4,
             "metrics": {
                 "PEG": 0.7542,
                 "ROE": "8%",
-                "PE": 9.5
+                "PE": 9.6
             },
             "tag": "Hidden Value",
-            "reason": "Market Cap: $37.9B | PEG: 0.7542"
+            "reason": "Market Cap: $38.0B | PEG: 0.7542"
         },
         {
             "symbol": "FAST",
             "name": "Fastenal Company",
-            "price": 45.83,
+            "price": 45.78,
             "score": 60.1,
             "metrics": {
                 "PEG": 3.225,
@@ -186,20 +186,20 @@
         {
             "symbol": "SW",
             "name": "Smurfit WestRock plc",
-            "price": 42.36,
-            "score": 59.5,
+            "price": 42.24,
+            "score": 59.6,
             "metrics": {
-                "PEG": 0.2642,
+                "PEG": 0.26,
                 "ROE": "4%",
                 "PE": 13.4
             },
             "tag": "Hidden Value",
-            "reason": "Market Cap: $22.2B | PEG: 0.2642"
+            "reason": "Market Cap: $22.1B | PEG: 0.26"
         },
         {
             "symbol": "BEN",
             "name": "Franklin Resources, Inc.",
-            "price": 27.205,
+            "price": 27.27,
             "score": 59.0,
             "metrics": {
                 "PEG": 0.3605,
@@ -212,7 +212,7 @@
         {
             "symbol": "KDP",
             "name": "Keurig Dr Pepper Inc.",
-            "price": 26.49,
+            "price": 26.53,
             "score": 58.5,
             "metrics": {
                 "PEG": 0.8709,
@@ -225,7 +225,7 @@
         {
             "symbol": "MGM",
             "name": "MGM Resorts International",
-            "price": 38.66,
+            "price": 38.59,
             "score": 56.3,
             "metrics": {
                 "PEG": 1.0438,
@@ -238,7 +238,7 @@
         {
             "symbol": "FIS",
             "name": "Fidelity National Information S",
-            "price": 48.35,
+            "price": 48.5,
             "score": 56.1,
             "metrics": {
                 "PEG": 0.2711,
@@ -246,12 +246,12 @@
                 "PE": 7.0
             },
             "tag": "Hidden Value",
-            "reason": "Market Cap: $25.0B | PEG: 0.2711"
+            "reason": "Market Cap: $25.1B | PEG: 0.2711"
         },
         {
             "symbol": "NKE",
             "name": "Nike, Inc.",
-            "price": 45.9951,
+            "price": 46.03,
             "score": 51.8,
             "metrics": {
                 "PEG": 1.4114,
@@ -259,7 +259,7 @@
                 "PE": 24.5
             },
             "tag": "Growth Gem",
-            "reason": "Market Cap: $68.1B | PEG: 1.4114"
+            "reason": "Market Cap: $68.2B | PEG: 1.4114"
         }
     ]
 }
