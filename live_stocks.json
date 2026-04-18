@@ -1,6 +1,19 @@
 {
-    "last_updated": "2026-04-18 06:55",
+    "last_updated": "2026-04-18 08:36",
     "stocks": [
+        {
+            "symbol": "CCL",
+            "name": "Carnival Corporation",
+            "price": 29.22,
+            "score": 98.5,
+            "metrics": {
+                "PEG": 1.08,
+                "ROE": "28%",
+                "PE": 11.3
+            },
+            "tag": "Hidden Value",
+            "reason": "Market Cap: $40.5B | PEG: 1.08"
+        },
         {
             "symbol": "APA",
             "name": "APA Corporation",
@@ -28,19 +41,6 @@
             "reason": "Market Cap: $12.4B | PEG: 0.48"
         },
         {
-            "symbol": "CMG",
-            "name": "Chipotle Mexican Grill, Inc.",
-            "price": 35.83,
-            "score": 98.5,
-            "metrics": {
-                "PEG": 1.97,
-                "ROE": "47%",
-                "PE": 26.3
-            },
-            "tag": "Growth Gem",
-            "reason": "Market Cap: $47.4B | PEG: 1.97"
-        },
-        {
             "symbol": "NCLH",
             "name": "Norwegian Cruise Line Holdings ",
             "price": 20.99,
@@ -54,17 +54,17 @@
             "reason": "Market Cap: $9.6B | PEG: 0.48"
         },
         {
-            "symbol": "CCL",
-            "name": "Carnival Corporation",
-            "price": 29.22,
+            "symbol": "CMG",
+            "name": "Chipotle Mexican Grill, Inc.",
+            "price": 35.83,
             "score": 98.5,
             "metrics": {
-                "PEG": 1.08,
-                "ROE": "28%",
-                "PE": 11.3
+                "PEG": 1.97,
+                "ROE": "47%",
+                "PE": 26.3
             },
-            "tag": "Hidden Value",
-            "reason": "Market Cap: $40.5B | PEG: 1.08"
+            "tag": "Growth Gem",
+            "reason": "Market Cap: $47.4B | PEG: 1.97"
         },
         {
             "symbol": "TSCO",
@@ -243,7 +243,7 @@
             "metrics": {
                 "PEG": 0.89,
                 "ROE": "8%",
-                "PE": 10.5
+                "PE": 10.6
             },
             "tag": "Hidden Value",
             "reason": "Market Cap: $36.0B | PEG: 0.89"
