@@ -1,32 +1,6 @@
 {
-    "last_updated": "2026-04-18 01:16",
+    "last_updated": "2026-04-18 04:23",
     "stocks": [
-        {
-            "symbol": "CCL",
-            "name": "Carnival Corporation",
-            "price": 29.22,
-            "score": 98.5,
-            "metrics": {
-                "PEG": 1.08,
-                "ROE": "28%",
-                "PE": 11.3
-            },
-            "tag": "Hidden Value",
-            "reason": "Market Cap: $40.5B | PEG: 1.08"
-        },
-        {
-            "symbol": "APA",
-            "name": "APA Corporation",
-            "price": 35.74,
-            "score": 98.5,
-            "metrics": {
-                "PEG": 0.95,
-                "ROE": "25%",
-                "PE": 9.3
-            },
-            "tag": "Hidden Value",
-            "reason": "Market Cap: $12.6B | PEG: 0.95"
-        },
         {
             "symbol": "GEN",
             "name": "Gen Digital Inc.",
@@ -41,30 +15,30 @@
             "reason": "Market Cap: $12.4B | PEG: 0.48"
         },
         {
-            "symbol": "TSCO",
-            "name": "Tractor Supply Company",
-            "price": 45.01,
+            "symbol": "APA",
+            "name": "APA Corporation",
+            "price": 35.74,
             "score": 98.5,
             "metrics": {
-                "PEG": 1.8035,
-                "ROE": "45%",
-                "PE": 18.8
+                "PEG": 0.95,
+                "ROE": "25%",
+                "PE": 9.4
             },
-            "tag": "Growth Gem",
-            "reason": "Market Cap: $23.7B | PEG: 1.8035"
+            "tag": "Hidden Value",
+            "reason": "Market Cap: $12.6B | PEG: 0.95"
         },
         {
-            "symbol": "CMG",
-            "name": "Chipotle Mexican Grill, Inc.",
-            "price": 35.83,
+            "symbol": "CCL",
+            "name": "Carnival Corporation",
+            "price": 29.22,
             "score": 98.5,
             "metrics": {
-                "PEG": 1.97,
-                "ROE": "47%",
-                "PE": 26.3
+                "PEG": 1.08,
+                "ROE": "28%",
+                "PE": 11.3
             },
-            "tag": "Growth Gem",
-            "reason": "Market Cap: $47.4B | PEG: 1.97"
+            "tag": "Hidden Value",
+            "reason": "Market Cap: $40.5B | PEG: 1.08"
         },
         {
             "symbol": "NCLH",
@@ -78,6 +52,32 @@
             },
             "tag": "Hidden Value",
             "reason": "Market Cap: $9.6B | PEG: 0.48"
+        },
+        {
+            "symbol": "TSCO",
+            "name": "Tractor Supply Company",
+            "price": 45.01,
+            "score": 98.5,
+            "metrics": {
+                "PEG": 1.82,
+                "ROE": "45%",
+                "PE": 18.8
+            },
+            "tag": "Growth Gem",
+            "reason": "Market Cap: $23.7B | PEG: 1.82"
+        },
+        {
+            "symbol": "CMG",
+            "name": "Chipotle Mexican Grill, Inc.",
+            "price": 35.83,
+            "score": 98.5,
+            "metrics": {
+                "PEG": 1.97,
+                "ROE": "47%",
+                "PE": 26.3
+            },
+            "tag": "Growth Gem",
+            "reason": "Market Cap: $47.4B | PEG: 1.97"
         },
         {
             "symbol": "TTD",
@@ -148,14 +148,14 @@
             "symbol": "AMCR",
             "name": "Amcor plc",
             "price": 41.94,
-            "score": 64.7,
+            "score": 64.3,
             "metrics": {
-                "PEG": 0.4824,
+                "PEG": 0.5,
                 "ROE": "8%",
                 "PE": 9.6
             },
             "tag": "Hidden Value",
-            "reason": "Market Cap: $19.4B | PEG: 0.4824"
+            "reason": "Market Cap: $19.4B | PEG: 0.5"
         },
         {
             "symbol": "LUV",
@@ -239,14 +239,14 @@
             "symbol": "KDP",
             "name": "Keurig Dr Pepper Inc.",
             "price": 26.53,
-            "score": 58.5,
+            "score": 58.1,
             "metrics": {
-                "PEG": 0.8709,
+                "PEG": 0.89,
                 "ROE": "8%",
-                "PE": 10.6
+                "PE": 10.5
             },
             "tag": "Hidden Value",
-            "reason": "Market Cap: $36.0B | PEG: 0.8709"
+            "reason": "Market Cap: $36.0B | PEG: 0.89"
         },
         {
             "symbol": "MGM",
