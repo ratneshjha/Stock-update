@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-04-18 16:27",
+    "last_updated": "2026-04-18 18:32",
     "stocks": [
         {
             "symbol": "NCLH",
@@ -15,17 +15,17 @@
             "reason": "Market Cap: $9.6B | PEG: 0.48"
         },
         {
-            "symbol": "GEN",
-            "name": "Gen Digital Inc.",
-            "price": 20.12,
+            "symbol": "CCL",
+            "name": "Carnival Corporation",
+            "price": 29.22,
             "score": 98.5,
             "metrics": {
-                "PEG": 0.48,
-                "ROE": "27%",
-                "PE": 7.0
+                "PEG": 1.08,
+                "ROE": "28%",
+                "PE": 11.3
             },
             "tag": "Hidden Value",
-            "reason": "Market Cap: $12.4B | PEG: 0.48"
+            "reason": "Market Cap: $40.5B | PEG: 1.08"
         },
         {
             "symbol": "TSCO",
@@ -39,19 +39,6 @@
             },
             "tag": "Growth Gem",
             "reason": "Market Cap: $23.7B | PEG: 1.82"
-        },
-        {
-            "symbol": "CCL",
-            "name": "Carnival Corporation",
-            "price": 29.22,
-            "score": 98.5,
-            "metrics": {
-                "PEG": 1.08,
-                "ROE": "28%",
-                "PE": 11.3
-            },
-            "tag": "Hidden Value",
-            "reason": "Market Cap: $40.5B | PEG: 1.08"
         },
         {
             "symbol": "CMG",
@@ -78,6 +65,19 @@
             },
             "tag": "Hidden Value",
             "reason": "Market Cap: $12.6B | PEG: 0.95"
+        },
+        {
+            "symbol": "GEN",
+            "name": "Gen Digital Inc.",
+            "price": 20.12,
+            "score": 98.5,
+            "metrics": {
+                "PEG": 0.48,
+                "ROE": "27%",
+                "PE": 7.0
+            },
+            "tag": "Hidden Value",
+            "reason": "Market Cap: $12.4B | PEG: 0.48"
         },
         {
             "symbol": "TTD",
