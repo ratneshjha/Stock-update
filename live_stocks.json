@@ -1,19 +1,6 @@
 {
-    "last_updated": "2026-04-18 04:23",
+    "last_updated": "2026-04-18 06:55",
     "stocks": [
-        {
-            "symbol": "GEN",
-            "name": "Gen Digital Inc.",
-            "price": 20.12,
-            "score": 98.5,
-            "metrics": {
-                "PEG": 0.48,
-                "ROE": "27%",
-                "PE": 7.0
-            },
-            "tag": "Hidden Value",
-            "reason": "Market Cap: $12.4B | PEG: 0.48"
-        },
         {
             "symbol": "APA",
             "name": "APA Corporation",
@@ -28,17 +15,30 @@
             "reason": "Market Cap: $12.6B | PEG: 0.95"
         },
         {
-            "symbol": "CCL",
-            "name": "Carnival Corporation",
-            "price": 29.22,
+            "symbol": "GEN",
+            "name": "Gen Digital Inc.",
+            "price": 20.12,
             "score": 98.5,
             "metrics": {
-                "PEG": 1.08,
-                "ROE": "28%",
-                "PE": 11.3
+                "PEG": 0.48,
+                "ROE": "27%",
+                "PE": 7.0
             },
             "tag": "Hidden Value",
-            "reason": "Market Cap: $40.5B | PEG: 1.08"
+            "reason": "Market Cap: $12.4B | PEG: 0.48"
+        },
+        {
+            "symbol": "CMG",
+            "name": "Chipotle Mexican Grill, Inc.",
+            "price": 35.83,
+            "score": 98.5,
+            "metrics": {
+                "PEG": 1.97,
+                "ROE": "47%",
+                "PE": 26.3
+            },
+            "tag": "Growth Gem",
+            "reason": "Market Cap: $47.4B | PEG: 1.97"
         },
         {
             "symbol": "NCLH",
@@ -54,6 +54,19 @@
             "reason": "Market Cap: $9.6B | PEG: 0.48"
         },
         {
+            "symbol": "CCL",
+            "name": "Carnival Corporation",
+            "price": 29.22,
+            "score": 98.5,
+            "metrics": {
+                "PEG": 1.08,
+                "ROE": "28%",
+                "PE": 11.3
+            },
+            "tag": "Hidden Value",
+            "reason": "Market Cap: $40.5B | PEG: 1.08"
+        },
+        {
             "symbol": "TSCO",
             "name": "Tractor Supply Company",
             "price": 45.01,
@@ -65,19 +78,6 @@
             },
             "tag": "Growth Gem",
             "reason": "Market Cap: $23.7B | PEG: 1.82"
-        },
-        {
-            "symbol": "CMG",
-            "name": "Chipotle Mexican Grill, Inc.",
-            "price": 35.83,
-            "score": 98.5,
-            "metrics": {
-                "PEG": 1.97,
-                "ROE": "47%",
-                "PE": 26.3
-            },
-            "tag": "Growth Gem",
-            "reason": "Market Cap: $47.4B | PEG: 1.97"
         },
         {
             "symbol": "TTD",
