@@ -1,31 +1,18 @@
 {
-    "last_updated": "2026-04-19 04:42",
+    "last_updated": "2026-04-19 07:06",
     "stocks": [
         {
-            "symbol": "TSCO",
-            "name": "Tractor Supply Company",
-            "price": 45.01,
+            "symbol": "CCL",
+            "name": "Carnival Corporation",
+            "price": 29.22,
             "score": 98.5,
             "metrics": {
-                "PEG": 1.82,
-                "ROE": "45%",
-                "PE": 18.8
+                "PEG": 1.08,
+                "ROE": "28%",
+                "PE": 11.3
             },
-            "tag": "Growth Gem",
-            "reason": "Market Cap: $23.7B | PEG: 1.82"
-        },
-        {
-            "symbol": "CMG",
-            "name": "Chipotle Mexican Grill, Inc.",
-            "price": 35.83,
-            "score": 98.5,
-            "metrics": {
-                "PEG": 1.97,
-                "ROE": "47%",
-                "PE": 26.3
-            },
-            "tag": "Growth Gem",
-            "reason": "Market Cap: $47.4B | PEG: 1.97"
+            "tag": "Hidden Value",
+            "reason": "Market Cap: $40.5B | PEG: 1.08"
         },
         {
             "symbol": "NCLH",
@@ -41,17 +28,17 @@
             "reason": "Market Cap: $9.6B | PEG: 0.48"
         },
         {
-            "symbol": "APA",
-            "name": "APA Corporation",
-            "price": 35.74,
+            "symbol": "CMG",
+            "name": "Chipotle Mexican Grill, Inc.",
+            "price": 35.83,
             "score": 98.5,
             "metrics": {
-                "PEG": 0.95,
-                "ROE": "25%",
-                "PE": 9.3
+                "PEG": 1.97,
+                "ROE": "47%",
+                "PE": 26.3
             },
-            "tag": "Hidden Value",
-            "reason": "Market Cap: $12.6B | PEG: 0.95"
+            "tag": "Growth Gem",
+            "reason": "Market Cap: $47.4B | PEG: 1.97"
         },
         {
             "symbol": "GEN",
@@ -67,17 +54,30 @@
             "reason": "Market Cap: $12.4B | PEG: 0.48"
         },
         {
-            "symbol": "CCL",
-            "name": "Carnival Corporation",
-            "price": 29.22,
+            "symbol": "APA",
+            "name": "APA Corporation",
+            "price": 35.74,
             "score": 98.5,
             "metrics": {
-                "PEG": 1.08,
-                "ROE": "28%",
-                "PE": 11.3
+                "PEG": 0.95,
+                "ROE": "25%",
+                "PE": 9.3
             },
             "tag": "Hidden Value",
-            "reason": "Market Cap: $40.5B | PEG: 1.08"
+            "reason": "Market Cap: $12.6B | PEG: 0.95"
+        },
+        {
+            "symbol": "TSCO",
+            "name": "Tractor Supply Company",
+            "price": 45.01,
+            "score": 98.5,
+            "metrics": {
+                "PEG": 1.82,
+                "ROE": "45%",
+                "PE": 18.8
+            },
+            "tag": "Growth Gem",
+            "reason": "Market Cap: $23.7B | PEG: 1.82"
         },
         {
             "symbol": "TTD",
