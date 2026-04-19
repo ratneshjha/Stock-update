@@ -1,45 +1,6 @@
 {
-    "last_updated": "2026-04-19 08:41",
+    "last_updated": "2026-04-19 10:30",
     "stocks": [
-        {
-            "symbol": "APA",
-            "name": "APA Corporation",
-            "price": 35.74,
-            "score": 98.5,
-            "metrics": {
-                "PEG": 0.95,
-                "ROE": "25%",
-                "PE": 9.3
-            },
-            "tag": "Hidden Value",
-            "reason": "Market Cap: $12.6B | PEG: 0.95"
-        },
-        {
-            "symbol": "GEN",
-            "name": "Gen Digital Inc.",
-            "price": 20.12,
-            "score": 98.5,
-            "metrics": {
-                "PEG": 0.48,
-                "ROE": "27%",
-                "PE": 7.0
-            },
-            "tag": "Hidden Value",
-            "reason": "Market Cap: $12.4B | PEG: 0.48"
-        },
-        {
-            "symbol": "NCLH",
-            "name": "Norwegian Cruise Line Holdings ",
-            "price": 20.99,
-            "score": 98.5,
-            "metrics": {
-                "PEG": 0.48,
-                "ROE": "23%",
-                "PE": 8.3
-            },
-            "tag": "Hidden Value",
-            "reason": "Market Cap: $9.6B | PEG: 0.48"
-        },
         {
             "symbol": "TSCO",
             "name": "Tractor Supply Company",
@@ -65,6 +26,45 @@
             },
             "tag": "Hidden Value",
             "reason": "Market Cap: $40.5B | PEG: 1.08"
+        },
+        {
+            "symbol": "GEN",
+            "name": "Gen Digital Inc.",
+            "price": 20.12,
+            "score": 98.5,
+            "metrics": {
+                "PEG": 0.48,
+                "ROE": "27%",
+                "PE": 7.0
+            },
+            "tag": "Hidden Value",
+            "reason": "Market Cap: $12.4B | PEG: 0.48"
+        },
+        {
+            "symbol": "APA",
+            "name": "APA Corporation",
+            "price": 35.74,
+            "score": 98.5,
+            "metrics": {
+                "PEG": 0.95,
+                "ROE": "25%",
+                "PE": 9.3
+            },
+            "tag": "Hidden Value",
+            "reason": "Market Cap: $12.6B | PEG: 0.95"
+        },
+        {
+            "symbol": "NCLH",
+            "name": "Norwegian Cruise Line Holdings ",
+            "price": 20.99,
+            "score": 98.5,
+            "metrics": {
+                "PEG": 0.48,
+                "ROE": "23%",
+                "PE": 8.3
+            },
+            "tag": "Hidden Value",
+            "reason": "Market Cap: $9.6B | PEG: 0.48"
         },
         {
             "symbol": "CMG",
