@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-04-20 20:35",
+    "last_updated": "2026-04-20 22:33",
     "stocks": [
         {
             "symbol": "CMG",
@@ -13,6 +13,32 @@
             },
             "tag": "Growth Gem",
             "reason": "Market Cap: $47.4B | PEG: 2.01"
+        },
+        {
+            "symbol": "TSCO",
+            "name": "Tractor Supply Company",
+            "price": 44.81,
+            "score": 98.5,
+            "metrics": {
+                "PEG": 1.82,
+                "ROE": "45%",
+                "PE": 18.7
+            },
+            "tag": "Growth Gem",
+            "reason": "Market Cap: $23.6B | PEG: 1.82"
+        },
+        {
+            "symbol": "CCL",
+            "name": "Carnival Corporation",
+            "price": 29.01,
+            "score": 98.5,
+            "metrics": {
+                "PEG": 1.08,
+                "ROE": "28%",
+                "PE": 11.2
+            },
+            "tag": "Hidden Value",
+            "reason": "Market Cap: $40.2B | PEG: 1.08"
         },
         {
             "symbol": "NCLH",
@@ -52,32 +78,6 @@
             },
             "tag": "Hidden Value",
             "reason": "Market Cap: $12.7B | PEG: 0.9"
-        },
-        {
-            "symbol": "TSCO",
-            "name": "Tractor Supply Company",
-            "price": 44.81,
-            "score": 98.5,
-            "metrics": {
-                "PEG": 1.82,
-                "ROE": "45%",
-                "PE": 18.7
-            },
-            "tag": "Growth Gem",
-            "reason": "Market Cap: $23.6B | PEG: 1.82"
-        },
-        {
-            "symbol": "CCL",
-            "name": "Carnival Corporation",
-            "price": 29.01,
-            "score": 98.5,
-            "metrics": {
-                "PEG": 1.08,
-                "ROE": "28%",
-                "PE": 11.2
-            },
-            "tag": "Hidden Value",
-            "reason": "Market Cap: $40.2B | PEG: 1.08"
         },
         {
             "symbol": "TTD",
