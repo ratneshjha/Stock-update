@@ -1,19 +1,6 @@
 {
-    "last_updated": "2026-04-20 04:49",
+    "last_updated": "2026-04-20 07:49",
     "stocks": [
-        {
-            "symbol": "CMG",
-            "name": "Chipotle Mexican Grill, Inc.",
-            "price": 35.83,
-            "score": 98.5,
-            "metrics": {
-                "PEG": 2.01,
-                "ROE": "47%",
-                "PE": 26.3
-            },
-            "tag": "Growth Gem",
-            "reason": "Market Cap: $47.4B | PEG: 2.01"
-        },
         {
             "symbol": "CCL",
             "name": "Carnival Corporation",
@@ -26,32 +13,6 @@
             },
             "tag": "Hidden Value",
             "reason": "Market Cap: $40.5B | PEG: 1.08"
-        },
-        {
-            "symbol": "GEN",
-            "name": "Gen Digital Inc.",
-            "price": 20.12,
-            "score": 98.5,
-            "metrics": {
-                "PEG": 0.49,
-                "ROE": "27%",
-                "PE": 7.0
-            },
-            "tag": "Hidden Value",
-            "reason": "Market Cap: $12.4B | PEG: 0.49"
-        },
-        {
-            "symbol": "APA",
-            "name": "APA Corporation",
-            "price": 35.74,
-            "score": 98.5,
-            "metrics": {
-                "PEG": 0.9,
-                "ROE": "25%",
-                "PE": 9.3
-            },
-            "tag": "Hidden Value",
-            "reason": "Market Cap: $12.6B | PEG: 0.9"
         },
         {
             "symbol": "NCLH",
@@ -67,6 +28,19 @@
             "reason": "Market Cap: $9.6B | PEG: 0.5"
         },
         {
+            "symbol": "CMG",
+            "name": "Chipotle Mexican Grill, Inc.",
+            "price": 35.83,
+            "score": 98.5,
+            "metrics": {
+                "PEG": 2.01,
+                "ROE": "47%",
+                "PE": 26.3
+            },
+            "tag": "Growth Gem",
+            "reason": "Market Cap: $47.4B | PEG: 2.01"
+        },
+        {
             "symbol": "TSCO",
             "name": "Tractor Supply Company",
             "price": 45.01,
@@ -78,6 +52,32 @@
             },
             "tag": "Growth Gem",
             "reason": "Market Cap: $23.7B | PEG: 1.82"
+        },
+        {
+            "symbol": "APA",
+            "name": "APA Corporation",
+            "price": 35.74,
+            "score": 98.5,
+            "metrics": {
+                "PEG": 0.9,
+                "ROE": "25%",
+                "PE": 9.3
+            },
+            "tag": "Hidden Value",
+            "reason": "Market Cap: $12.6B | PEG: 0.9"
+        },
+        {
+            "symbol": "GEN",
+            "name": "Gen Digital Inc.",
+            "price": 20.12,
+            "score": 98.5,
+            "metrics": {
+                "PEG": 0.49,
+                "ROE": "27%",
+                "PE": 7.0
+            },
+            "tag": "Hidden Value",
+            "reason": "Market Cap: $12.4B | PEG: 0.49"
         },
         {
             "symbol": "TTD",
