@@ -1,6 +1,45 @@
 {
-    "last_updated": "2026-04-19 22:23",
+    "last_updated": "2026-04-20 01:26",
     "stocks": [
+        {
+            "symbol": "CCL",
+            "name": "Carnival Corporation",
+            "price": 29.22,
+            "score": 98.5,
+            "metrics": {
+                "PEG": 1.08,
+                "ROE": "28%",
+                "PE": 11.3
+            },
+            "tag": "Hidden Value",
+            "reason": "Market Cap: $40.5B | PEG: 1.08"
+        },
+        {
+            "symbol": "APA",
+            "name": "APA Corporation",
+            "price": 35.74,
+            "score": 98.5,
+            "metrics": {
+                "PEG": 0.9,
+                "ROE": "25%",
+                "PE": 9.3
+            },
+            "tag": "Hidden Value",
+            "reason": "Market Cap: $12.6B | PEG: 0.9"
+        },
+        {
+            "symbol": "TSCO",
+            "name": "Tractor Supply Company",
+            "price": 45.01,
+            "score": 98.5,
+            "metrics": {
+                "PEG": 1.82,
+                "ROE": "45%",
+                "PE": 18.8
+            },
+            "tag": "Growth Gem",
+            "reason": "Market Cap: $23.7B | PEG: 1.82"
+        },
         {
             "symbol": "NCLH",
             "name": "Norwegian Cruise Line Holdings ",
@@ -26,45 +65,6 @@
             },
             "tag": "Hidden Value",
             "reason": "Market Cap: $12.4B | PEG: 0.49"
-        },
-        {
-            "symbol": "TSCO",
-            "name": "Tractor Supply Company",
-            "price": 45.01,
-            "score": 98.5,
-            "metrics": {
-                "PEG": 1.82,
-                "ROE": "45%",
-                "PE": 18.8
-            },
-            "tag": "Growth Gem",
-            "reason": "Market Cap: $23.7B | PEG: 1.82"
-        },
-        {
-            "symbol": "APA",
-            "name": "APA Corporation",
-            "price": 35.74,
-            "score": 98.5,
-            "metrics": {
-                "PEG": 0.9,
-                "ROE": "25%",
-                "PE": 9.3
-            },
-            "tag": "Hidden Value",
-            "reason": "Market Cap: $12.6B | PEG: 0.9"
-        },
-        {
-            "symbol": "CCL",
-            "name": "Carnival Corporation",
-            "price": 29.22,
-            "score": 98.5,
-            "metrics": {
-                "PEG": 1.08,
-                "ROE": "28%",
-                "PE": 11.3
-            },
-            "tag": "Hidden Value",
-            "reason": "Market Cap: $40.5B | PEG: 1.08"
         },
         {
             "symbol": "CMG",
